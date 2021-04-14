@@ -1,0 +1,35 @@
+[reframe]
+name = "Substrate Pallet"
+author = "obin.mf@gmail.com"
+min_version = "0.1.8"
+
+[project]
+name = "Substrate Pallet"
+version = "0.0.1"
+
+[[param]]
+description = {ask="Description?", default="My Substrate Pallet"}
+
+[[param]]
+author_name = {ask = "Author name?"}
+
+[[param]]
+author_email = {ask = "Author email?"}
+
+[[param]]
+license = {ask = "License", default="Apache-2"}
+
+[[param]]
+method1 = {ask = "Method 1", default="method1"}
+
+[[param]]
+method2 = {ask = "Method 2", default="method2"}
+
+[[param]]
+method3 = {ask = "Method 3", default="method3"}
+
+[[param]]
+core_version = {ask = "Base substrate version (3.0.0)?", default="3.0.0"}
+
+[[param]]
+object_name = {ask = "Storage name (Object)?", default="Object"}
