@@ -141,7 +141,7 @@ pub mod pallet {
         /// # <weight>
         /// # </weight>
         #[pallet::weight(T::WeightInfo::$param.method1_snake_case$())]
-        fn $param.method1_snake_case$(
+        pub(crate) fn $param.method1_snake_case$(
             origin: OriginFor<T>,
             name: Vec<u8>,
             owner: <T::Lookup as StaticLookup>::Source,
@@ -182,14 +182,14 @@ pub mod pallet {
         /// $param.method2$
         /// 
         #[pallet::weight(100_000)]
-        fn $param.method2_snake_case$(origin: OriginFor<T>) -> DispatchResultWithPostInfo {
+        pub(crate) fn $param.method2_snake_case$(origin: OriginFor<T>) -> DispatchResultWithPostInfo {
             Ok(().into())
         }
 
         /// $param.method3$
         /// 
         #[pallet::weight(100_000)]
-        fn $param.method3_snake_case$(origin: OriginFor<T>) -> DispatchResultWithPostInfo {
+        pub(crate) fn $param.method3_snake_case$(origin: OriginFor<T>) -> DispatchResultWithPostInfo {
             Ok(().into())
         }
 
